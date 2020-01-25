@@ -1,0 +1,2 @@
+SELECT c.name as cashier, p.name as product,ct.name as category, p.price as price FROM product p 
+JOIN cashier c on p.id_cashier = c.id JOIN category ct on p.id_category = ct.id ORDER BY p.id
