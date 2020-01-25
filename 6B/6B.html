@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <title>Test Arkademy</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="asset/icon/logo_arka.png" height="50" class="d-inline-block align-top logo " alt="">
+            </a>
+            <input class="form-control col-8" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning px-5 btnAddModal " data-toggle="modal" data-target="#inputModal">ADD</button>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card">
+            <div class="table-responsive">
+                <table class="table table-borderless  text-center">
+                    <thead>
+                        <tr class="bg-warning ">
+                            <th style="border-top-left-radius: 10px;">No</th>
+                            <th>Cashier</th>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th style="border-top-right-radius: 10px;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pevita Pearce</td>
+                            <td>Latte</td>
+                            <td>Drink</td>
+                            <td>Rp. 10.000</td>
+                            <td>
+                                <a href="#" class="badge btn-edit" data-toggle="modal" data-target="#inputModal">
+                                    <img src="asset/icon/edit.svg" alt="">
+                                </a>
+
+                                <a href="#" class="badge" id="btn-hapus">
+                                    <img src="asset/icon/trash-2.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Raisa Adriana</td>
+                            <td>cake</td>
+                            <td>Drink</td>
+                            <td>Rp. 15.000</td>
+                            <td>
+                                <a href="#" class="badge btn-edit" data-toggle="modal" data-target="#inputModal">
+                                    <img src="asset/icon/edit.svg" alt="">
+                                </a>
+                                <a href="#" class="badge" id="btn-hapus">
+                                    <img src="asset/icon/trash-2.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal input -->
+    <div class="modal fade" id="inputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal">ADD DATA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Name..">
+                    </div>
+                    <div class="input-group mb-3">
+                        <select class="custom-select" id="work">
+                            <option selected disabled>Work..</option>
+                            <option value="Backend Dev">Backend Developer</option>
+                            <option value="Frontend Dev">Frontend Developer</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <select class="custom-select" id="salary">
+                            <option selected disabled>Salary..</option>
+                            <option>12.000.000</option>
+                            <option>10.000.000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-warning" id="btnAdd">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="asset/js/jquery-3.4.1.min.js"> </script>
+    <script src="asset/js/popper.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script> -->
+    <script src="asset/js/sweetalert2.all.min.js"> </script>
+    <script src="asset/js/script.js"> </script>
+    <script src="asset/js/bootstrap.min.js"> </script>
+
+</body>
+
+</html>
